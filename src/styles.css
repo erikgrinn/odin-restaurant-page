@@ -47,14 +47,8 @@ nav {
 }
 
 img {
-  /* background-image: url('./images/alien-dishes.jpg'); */
   height: 65%;
-  width: 65%;
-}
-
-footer {
-  background-color:var(--tan);
-  margin:0;
+  width: 60%;
 }
 
 

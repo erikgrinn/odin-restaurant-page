@@ -3,8 +3,6 @@ import homeImage from "./images/alien-dishes.jpg";
 const image = document.createElement("img");
 image.src = homeImage;
 
-
-
 const homeDiv = document.createElement('div')
 
 // Create and append hero section
@@ -50,13 +48,6 @@ contactText.innerHTML = '123 Foodie Street, Flavor Town, FT 45678<br>Email: cont
 contact.appendChild(contactTitle);
 contact.appendChild(contactText);
 homeDiv.appendChild(contact);
-
-// Create and append footer
-const footer = document.createElement('footer');
-const footerText = document.createElement('p');
-footerText.textContent = '© 2024 Delicious Eats. All rights reserved.';
-footer.appendChild(footerText);
-homeDiv.appendChild(footer);
 
 export {homeDiv, image}
 
