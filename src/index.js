@@ -1,3 +1,25 @@
 import "./styles.css";
-import "./content.js";
-console.log('hello')
+import { homeDiv } from "./home.js";
+import { aboutDiv } from "./about.js";
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contentDiv = document.getElementById('content')
+    const homeBtn = document.getElementById('homeBtn');
+    const aboutBtn = document.getElementById('aboutBtn');
+    // Load home tab by default
+    contentDiv.appendChild(homeDiv)
+
+    homeBtn.addEventListener('click', () => {
+        contentDiv.innerHTML = ''
+        contentDiv.appendChild(homeDiv)
+    })
+
+    aboutBtn.addEventListener('click', () => {
+        contentDiv.innerHTML = ''
+        contentDiv.appendChild(aboutDiv)
+    })
+
+    // menuBtn.addEventListener('click', () => {
+    //     import('./menu.js')
+    // });
+});
