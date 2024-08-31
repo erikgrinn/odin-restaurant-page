@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contentDiv.appendChild(homeDiv)
 
     homeBtn.addEventListener('click', () => {
+        // homeBtn.style.backgroundColor = 'black'
         contentDiv.innerHTML = ''
         contentDiv.appendChild(homeDiv)
     })
