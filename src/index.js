@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentDiv = document.getElementById('content')
     const homeBtn = document.getElementById('homeBtn');
     const aboutBtn = document.getElementById('aboutBtn');
-    // Load home tab by default
+
     contentDiv.appendChild(homeDiv)
 
     homeBtn.addEventListener('click', () => {
@@ -18,8 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
         contentDiv.innerHTML = ''
         contentDiv.appendChild(aboutDiv)
     })
-
-    // menuBtn.addEventListener('click', () => {
-    //     import('./menu.js')
-    // });
 });

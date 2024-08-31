@@ -1,7 +1,7 @@
 
     const homeDiv = document.createElement('div')
 
-    // // Create and append header
+    // Create and append header
     // const header = document.createElement('header');
     // const headerTitle = document.createElement('h1');
     // headerTitle.textContent = 'Delicious Eats';
@@ -21,7 +21,7 @@
     // homeDiv.appendChild(nav);
 
     // Create and append hero section
-    const hero = document.createElement('section');
+    const hero = document.createElement('header');
     hero.id = 'hero';
     const heroTitle = document.createElement('h1');
     heroTitle.textContent = 'Welcome to Delicious Eats';
