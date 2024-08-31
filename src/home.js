@@ -1,3 +1,9 @@
+// import homeImage from "./images/alien-dishes.jpg";
+   
+// const image = document.createElement("img");
+// image.src = homeImage;
+
+
 
     const homeDiv = document.createElement('div')
 
@@ -21,8 +27,8 @@
     // homeDiv.appendChild(nav);
 
     // Create and append hero section
-    const hero = document.createElement('header');
-    hero.id = 'hero';
+    const hero = document.createElement('div');
+    hero.id = 'mainTitle';
     const heroTitle = document.createElement('h1');
     heroTitle.textContent = 'Welcome to Delicious Eats';
     const heroText = document.createElement('p');
@@ -70,7 +76,6 @@
     footerText.textContent = '© 2024 Delicious Eats. All rights reserved.';
     footer.appendChild(footerText);
     homeDiv.appendChild(footer);
-
 
     export {homeDiv}
 

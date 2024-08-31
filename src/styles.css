@@ -1,28 +1,101 @@
 /* styles.css */
-body {
-  background-image: linear-gradient(to right, #23b8a2, #264b82);
-  }
 
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color: #CD5C08;
+  --secondary-color: #FFF5E4;
+  --tertiary-color: #C1D8C3;
+  --quaternary-color: #6A9C89;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --mild-shadow: 0 5px 10px var(--shadow);
+  --bottom-white-shadow: 0 10px 10px rgba(255, 255, 255, 0.75);
+  --strong-shadow: rgba(0, 0, 0, 0.75);
+}
 
 body {
     height: 100vh;
     width: auto;
-    background-image: linear-gradient(to right, #23b8a2, #264b82);
+    background-image: linear-gradient(to right, #ffffff, #bbd36d);
     /* background-repeat: round repeat; */
     margin: 0 auto;
     font-family: "Raleway", sans-serif; 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 
-:root {
-    --main-color: #CD5C08;
-    --secondary-color: #FFF5E4;
-    --tertiary-color: #C1D8C3;
-    --quaternary-color: #6A9C89;
-    --shadow: rgba(0, 0, 0, 0.25);
-    --mild-shadow: 5px 5px 10px var(--shadow);
-    --bottom-white-shadow: 0 10px 10px rgba(255, 255, 255, 0.75);
-    --strong-shadow: rgba(0, 0, 0, 0.75);
+header {
+  width: 100%;
+  padding-left: 25%;
+  background-color: var(--main-color);
+  box-shadow: var(--mild-shadow);
 }
+
+nav {
+  text-align:center;
+  display:flex;
+}
+
+nav button {
+  box-shadow: var(--bottom-white-shadow);
+}
+
+#content {
+  width: 75%;
+  display: flex;
+}
+
+.homeImage {
+  /* background-image: url('./images/alien-dishes.jpg'); */
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  background-color:var(--tan);
+  margin:0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {font-family: "Cinzel", serif;} 
+
+.gallery { 
+  display: flex;
+  flex-flow: row wrap;
+  margin:0; 
+  padding:0;
+}
+
+.gallery figure {
+  width: 320px; 
+  margin:1%; 
+  padding:1%; 
+  /* border:var(--lightGreen); 
+  background-color:var(--darkBrown);     */
+}
+
+.gallery figcaption {
+  display:block; 
+  padding: 1% 1% 2% 1%; 
+  /* color: var(--tan); */
+}
+
+.gallery img  {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
