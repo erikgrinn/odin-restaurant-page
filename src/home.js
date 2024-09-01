@@ -1,7 +1,6 @@
-import homeImage from "./images/alien-dishes.jpg";
-   
-const image = document.createElement("img");
-image.src = homeImage;
+import image1 from "./images/alien-dishes.jpg";
+const homeImage = document.createElement("img");
+homeImage.src = image1;
 
 const homeDiv = document.createElement('div')
 
@@ -49,7 +48,7 @@ contact.appendChild(contactTitle);
 contact.appendChild(contactText);
 homeDiv.appendChild(contact);
 
-export {homeDiv, image}
+export {homeDiv, homeImage}
 
 
 
