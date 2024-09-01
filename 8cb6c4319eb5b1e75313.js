@@ -1,5 +1,5 @@
 import "./styles.css";
-import { homeDiv, image } from "./home.js";
+import { homeDiv, homeImage } from "./home.js";
 import { menuDiv } from "./menu.js"
 import { aboutDiv } from "./about.js";
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutBtn = document.getElementById('aboutBtn');
 
     contentDiv.appendChild(homeDiv)
-    contentDiv.appendChild(image)
+    contentDiv.appendChild(homeImage)
     homeBtn.style.boxShadow = 'var(--bottom-white-shadow)'
     aboutBtn.style.boxShadow = ''
     menuBtn.style.boxShadow = ''
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contentDiv.innerHTML = ''
         contentDiv.appendChild(homeDiv)
-        contentDiv.appendChild(image)
+        contentDiv.appendChild(homeImage)
     })
 
     menuBtn.addEventListener('click', () => {
